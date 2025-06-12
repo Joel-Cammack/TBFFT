@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Luna's Pet Tag</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+color: #222;
+text-align: center;
+padding: 1rem;
+background: linear-gradient(-45deg, #F1FAFF, #D0F4F7, #F1FAFF, #C3F0E8);
+background-size: 400% 400%;
+animation: waveBackground 12s ease infinite;
+}
+
+@keyframes waveBackground {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+h1 {
+font-size: 2em;
+font-family: 'Pacifico', cursive;
+margin: 0.5rem 0;
+}
+
+.icons {
+font-size: 1.5em;
+margin-bottom: 0.5rem;
+color: black;
+text-shadow:
+-1px -1px 0 #FF9F1C,
+1px -1px 0 #FF9F1C,
+-1px 1px 0 #FF9F1C,
+1px 1px 0 #FF9F1C;
+}
+
+.card-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+}
+
+.card {
+background: #fff;
+color: #222;
+padding: 1rem;
+border-radius: 15px;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 300px;
+transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.card:hover {
+transform: scale(1.03);
+box-shadow: 0 12px 28px rgba(46, 196, 182, 0.3);
+}
+
+a {
+color: #2EC4B6;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+iframe {
+width: 100%;
+max-width: 600px;
+height: 200px;
+border-radius: 10px;
+border: 3px solid #FF9F1C;
+margin-top: 1.5rem;
+}
+
+.about {
+margin-top: 1.5rem;
+padding: 1rem;
+font-style: italic;
+background-color: #FF9F1C20;
+border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 1.6em;
+}
+
+.card {
+font-size: 0.95em;
+}
+}
+</style>
+</head>
+<body>
+<div class="icons">🐾 🦴 ❤️ 🐶</div>
+<h1>Hi, I'm Luna! 🐾</h1>
+
+<div class="card-container">
+<div class="card">
+<h3>Contact Info</h3>
+<p><strong>Owner:</strong> Jane Doe</p>
+<p><strong>Phone:</strong> (555) 123-4567</p>
+<p><strong>Reward:</strong> $100 if found</p>
+</div>
+
+<div class="card">
+<h3>Medical Info</h3>
+<p>Allergic to peanuts. Needs daily meds at 8am.</p>
+<p>Vet: Downtown Animal Hospital – (555) 999-4444</p>
+</div>
+
+<div class="card">
+<h3>Behavior Notes</h3>
+<p>Friendly but scared of loud noises. Please speak gently.</p>
+<p>📍 Last seen: Brooklyn, NY</p>
+<p>📧 <a href="mailto:jane@email.com">Email my owner</a></p>
+</div>
+</div>
+
+<div class="about">
+<p>Hi, I’m Luna! I love belly rubs, peanut butter, and chasing squirrels. If I’m out alone, I’m probably trying to visit the dog park on 5th Street. 🐿️</p>
+</div>
+</body>
+</html>
